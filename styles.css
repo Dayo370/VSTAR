@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgb(20, 5, 71);
+}
+
+.navbar .navbar-brand {
+    color: rgb(123, 7, 7);
+    font-weight: 900;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.navbar .navbar-brand:hover {
+    color: rgb(97, 83, 3);
+}
+
+.navbar .navbar-brand span {
+    color: rgb(97, 83, 3);
+}
+
+.navbar .nav-link {
+    color: white;
+    font-weight: 800;
+}
+
+.navbar .nav-link:hover {
+    color: rgb(97, 83, 3);
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
+
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.services .cardbody i{
+    font-size: 50px;
+    text-align: center;
+    margin-left: 40%;
+}
+
+.services .cardbody {
+    width: 300px;
+    height: fit-content;
+    place-items: center;
+    background-color: #ddd;
+}
+
+.card {
+    margin: 60px;
+    border: none;
+}
+
+.services .ccontainer {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#contact {
+    padding: 40px 0px;
+    background-color: #FFF; /* Light background color for contrast */
+}
+
+#condo .container {
+    width: 100%;
+    /* max-width: 800px; */
+    margin: 0 auto;
+    background-color: #ddd; /* White background for the form */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    border-radius: 8px; /* Rounded corners */
+    padding: 30px;
+}
+
+#condo h2 {
+    text-align: center;
+    color: #2F4F7F;
+}
+
+/* Form elements styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Align name and email side by side */
+.inline-fields {
+    display: flex;
+    gap: 20px; /* Space between the fields */
+}
+
+.inline-fields .form-group {
+    flex: 1; /* Make the fields evenly spaced */
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600; /* Slightly bold for emphasis */
+    margin-bottom: 8px;
+    color: #333; /* Dark text color */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd; /* Light border color */
+    border-radius: 5px; /* Rounded input corners */
+    background-color: #FFF; /* Subtle background color for inputs */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Glow effect on focus */
+    outline: none; /* Remove default focus outline */
+}
+
+/* Button styling */
+button[type="submit"] {
+    padding: 12px 24px;
+    background-color: #2F4F7F; /* Primary blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Success/Error message area */
+#message {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333; /* Dark text color */
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .carousel-caption {
+        bottom: 125px;
+    }
+
+    .carousel-caption h5 {
+        padding: 10px 15px;
+    }
+
+    .carousel-caption p {
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+
+    }
+}
